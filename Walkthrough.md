@@ -4,7 +4,7 @@ This guide demonstrates the complete workflow of analyzing cloud policies using 
 
 ---
 
-## 📸 Screenshot Guide
+## Screenshot Guide
 
 ### 1. App Interface Overview
 <img width="1128" height="1299" alt="Image" src="https://github.com/user-attachments/assets/17803dbf-c9c4-4939-8b83-ed35e290b461" />
@@ -38,7 +38,7 @@ Includes:
 
 ---
 
-## 📊 Comparison Screenshots
+## Comparison Screenshots
 
 ### Before/After Risk Score Comparison
 *<img width="2068" height="925" alt="Image" src="https://github.com/user-attachments/assets/125902be-6ecb-4369-b947-b4360c9e9cf7" />*
@@ -265,7 +265,7 @@ I ended up doing more remediations so this isn't exact but the concept is the sa
 
 ---
 
-## 🎯 Multi-Platform Demo Screenshots
+## Multi-Platform Demo Screenshots
 
 ### Platform Detection Showcase
 *<img width="2061" height="913" alt="Image" src="https://github.com/user-attachments/assets/3f034132-5e1c-4b36-b795-5a2de9b797d9" />*
