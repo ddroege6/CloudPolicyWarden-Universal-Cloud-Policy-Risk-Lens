@@ -60,7 +60,7 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 - **Compliance Support**: Streamlines preparation for SOC2, ISO27001, and cloud security audits
 
 ### Quantifiable Impact
-- **95%+ time reduction** in initial policy security assessment
+- **Time reduction** in initial policy security assessment
 - **Standardized risk scoring** across all cloud platforms and teams
 - **Copy-paste remediation** eliminates guesswork in security fixes
 - **Executive-ready summaries** enable informed risk management decisions
