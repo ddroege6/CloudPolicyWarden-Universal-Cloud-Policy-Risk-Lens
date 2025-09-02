@@ -268,21 +268,9 @@ I ended up doing more remediations so this isn't exact but the concept is the sa
 ## 🎯 Multi-Platform Demo Screenshots
 
 ### Platform Detection Showcase
-*[Screenshot: multi-platform-detection.png]*
-
-**Grid layout showing:**
-- AWS IAM → "Platform Detected: AWS IAM"
-- Azure RBAC → "Platform Detected: Azure RBAC"  
-- GCP IAM → "Platform Detected: GCP IAM"
-- Kubernetes → "Platform Detected: Kubernetes RBAC"
-
-### Cross-Platform Risk Patterns
-*[Screenshot: cross-platform-patterns.png]*
-
-**Shows similar security anti-patterns across platforms:**
-- Wildcard permissions (AWS: "s3:*", Azure: "Microsoft.Compute/*")
-- Privilege escalation (GCP: "roles/owner", K8s: "cluster-admin")
-- Resource overbreadth (All platforms showing broad access)
+*<img width="2061" height="913" alt="Image" src="https://github.com/user-attachments/assets/3f034132-5e1c-4b36-b795-5a2de9b797d9" />*
+<img width="2059" height="916" alt="Image" src="https://github.com/user-attachments/assets/59bca40a-cabe-4140-8bc0-5414aaea1e2b" />
+<img width="2063" height="915" alt="Image" src="https://github.com/user-attachments/assets/5470d6f3-dcdb-49c6-aa20-11ab9e9a82b9" />
 
 ---
 
