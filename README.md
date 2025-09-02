@@ -1,6 +1,6 @@
 # CloudShield: Universal Cloud Policy Risk Lens
 
-## 📋 Project Overview
+## Project Overview
 
 [**CloudShield**](https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool) is an AI-powered security analysis tool that automatically detects, analyzes, and provides remediation guidance for cloud infrastructure policies across multiple platforms. Built using AWS PartyRock's generative AI capabilities, this tool transforms complex security policy review from a manual, time-intensive process into an instant, actionable analysis.
 
@@ -8,12 +8,12 @@
 
 [App Link](https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool)
 
-### 🎯 Core Value Proposition
+### Core Value Proposition
 Transform hours of manual security policy review into seconds of AI-powered analysis with actionable, copy-paste remediation guidance.
 
 ---
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 **Platform**: AWS PartyRock (Generative AI App Builder)  
 **Technology Stack**: 
@@ -30,7 +30,7 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 
 ---
 
-## 👥 Target Audience
+## Target Audience
 
 ### Primary Users
 - **DevSecOps Engineers** managing multi-cloud infrastructure
@@ -45,7 +45,7 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 
 ---
 
-## 🚀 Use Cases & Business Impact
+## Use Cases & Business Impact
 
 ### Immediate Use Cases
 1. **Pre-Merge Security Reviews**: Integrate into CI/CD pipelines for automated policy validation
@@ -68,7 +68,7 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 
 ---
 
-## 🏆 Competitive Differentiation
+## Competitive Differentiation
 
 ### Unique Advantages
 1. **Multi-Cloud Native**: Unlike single-platform tools (AWS Config, Azure Security Center)
@@ -84,7 +84,7 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 
 ---
 
-## 📊 Success Metrics & Validation
+## Success Metrics & Validation
 
 ### Technical Metrics
 - Successfully analyzes policies from 6+ different cloud platforms
