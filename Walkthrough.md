@@ -41,18 +41,13 @@ Includes:
 ## 📊 Comparison Screenshots
 
 ### Before/After Risk Score Comparison
-*[Screenshot: before-after-risk-scores.png]*
+*<img width="2068" height="925" alt="Image" src="https://github.com/user-attachments/assets/125902be-6ecb-4369-b947-b4360c9e9cf7" />*
 
-**Layout:**
-```
-BEFORE                   |  AFTER
-======================== |  ========================
-🔴 RISK SCORE: CRITICAL  |  🟢 RISK SCORE: LOW
-                         |
-- s3:* permissions       |  - s3:GetObject only
-- No resource limits     |  - Specific bucket ARNs
-- Missing conditions     |  - Encryption required
-- Privilege escalation   |  - No escalation paths
+**After a few remediation implementations, the Risk Score is dramatically decreased.**
+
+<img width="2067" height="917" alt="Image" src="https://github.com/user-attachments/assets/21647178-23bd-412f-8133-735b0a505c0d" />
+
+
 ```
 
 ### Policy Code Comparison
@@ -62,6 +57,11 @@ BEFORE                   |  AFTER
 - **Before**: Dangerous wildcards and broad permissions
 - **After**: Scoped permissions with proper conditions
 - **Highlighting**: Changes in different colors
+
+
+
+
+
 
 ### Findings Reduction Table
 *[Screenshot: findings-reduction-table.png]*
