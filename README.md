@@ -2,9 +2,9 @@
 
 ## 📋 Project Overview
 
-**Universal Cloud Policy Risk Lens** is an AI-powered security analysis tool that automatically detects, analyzes, and provides remediation guidance for cloud infrastructure policies across multiple platforms. Built using AWS PartyRock's generative AI capabilities, this tool transforms complex security policy review from a manual, time-intensive process into an instant, actionable analysis.
+[**Universal Cloud Policy Risk Lens**](https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool) is an AI-powered security analysis tool that automatically detects, analyzes, and provides remediation guidance for cloud infrastructure policies across multiple platforms. Built using AWS PartyRock's generative AI capabilities, this tool transforms complex security policy review from a manual, time-intensive process into an instant, actionable analysis.
 
-https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool
+[App Link](https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool)
 
 ### 🎯 Core Value Proposition
 Transform hours of manual security policy review into seconds of AI-powered analysis with actionable, copy-paste remediation guidance.
