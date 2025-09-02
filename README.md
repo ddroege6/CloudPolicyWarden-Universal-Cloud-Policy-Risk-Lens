@@ -61,39 +61,6 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 - **Copy-paste remediation** eliminates guesswork in security fixes
 - **Executive-ready summaries** enable informed risk management decisions
 
----
-
-## 🎨 Portfolio Showcase Strategy
-
-### Recommended Approach: **Multi-Channel Portfolio Presence**
-
-#### 1. **GitHub Repository** ⭐ (Recommended Primary)
-```
-/universal-cloud-policy-risk-lens/
-├── README.md (full project documentation)
-├── /examples/ (sample policies for each cloud provider)
-├── /screenshots/ (app interface and results)
-├── /prompts/ (engineered prompt architecture)
-└── /docs/ (technical implementation details)
-```
-
-**Why GitHub Works Best:**
-- Demonstrates prompt engineering skills (increasingly valuable)
-- Shows understanding of cloud security across multiple platforms
-- Provides working examples that showcase practical knowledge
-- Enables easy sharing with technical recruiters/hiring managers
-
-#### 2. **Portfolio Website Section**
-- **Hero Image**: Screenshot of the tool analyzing a complex policy
-- **Problem Statement**: "Manual cloud security reviews create bottlenecks"
-- **Solution Overview**: Brief description with key metrics
-- **Technical Deep-Dive**: Link to GitHub repository
-- **Demo Link**: Direct link to live PartyRock app
-
-#### 3. **LinkedIn/Professional Content**
-- **Case Study Post**: "How I built an AI-powered cloud security tool"
-- **Technical Article**: "Multi-cloud security analysis with generative AI"
-- **Results Showcase**: Before/after examples showing security improvements
 
 ---
 
@@ -125,12 +92,6 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 - Reduces cognitive load on security reviews
 - Scales security expertise across organizations
 
-### Portfolio Impact
-- Demonstrates AI/ML application skills
-- Shows deep cloud security knowledge
-- Proves ability to build practical, business-focused solutions
-- Highlights understanding of modern DevSecOps workflows
-
 ---
 
 ## 🔗 Live Demo & Resources
@@ -141,4 +102,3 @@ Transform hours of manual security policy review into seconds of AI-powered anal
 
 ---
 
-*This project showcases the intersection of AI/ML capabilities, cloud security expertise, and practical business problem-solving - demonstrating readiness for senior DevSecOps, Cloud Security, or AI Engineering roles.*
