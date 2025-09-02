@@ -273,6 +273,3 @@ I ended up doing more remediations so this isn't exact but the concept is the sa
 <img width="2063" height="915" alt="Image" src="https://github.com/user-attachments/assets/5470d6f3-dcdb-49c6-aa20-11ab9e9a82b9" />
 
 ---
-
-
-This walkthrough structure will create a compelling visual story that demonstrates both technical expertise and practical business value.
