@@ -1,6 +1,6 @@
-# Universal Cloud Policy Risk Lens - Visual Walkthrough
+# CloudShield: Universal Cloud Policy Risk Lens - Visual Walkthrough
 
-This guide demonstrates the complete workflow of analyzing cloud policies using the Universal Cloud Policy Risk Lens, from initial policy input through final remediation recommendations.
+This guide demonstrates the complete workflow of analyzing cloud policies using CloudShield, from initial policy input through final remediation recommendations.
 
 ---
 
