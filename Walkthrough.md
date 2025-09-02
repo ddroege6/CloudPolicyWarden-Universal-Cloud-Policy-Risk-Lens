@@ -20,8 +20,7 @@ This guide demonstrates the complete workflow of analyzing cloud policies using 
 ---
 
 ### 3. Risk Analysis Output - Header
-*(https://github.com/user-attachments/assets/9eae2709-aaab-42e3-98de-115268001ea4)*
-
+[![Watch the demo](assets/thumb.png)](https://github.com/user-attachments/assets/9eae2709-aaab-42e3-98de-115268001ea4 "Click to watch")
 
 **Caption:** *Instant risk assessment with platform auto-detection and severity classification*
 
