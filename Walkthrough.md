@@ -48,23 +48,212 @@ Includes:
 <img width="2067" height="917" alt="Image" src="https://github.com/user-attachments/assets/21647178-23bd-412f-8133-735b0a505c0d" />
 
 
-```
+---
 
 ### Policy Code Comparison
-*[Screenshot: policy-code-before-after.png]*
 
-**Side-by-side code blocks showing:**
-- **Before**: Dangerous wildcards and broad permissions
-- **After**: Scoped permissions with proper conditions
-- **Highlighting**: Changes in different colors
+---
 
 
+**Bad**
 
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3FullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "EC2AndIAMAccess",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:*",
+        "iam:PassRole",
+        "iam:CreateUser",
+        "iam:AttachUserPolicy",
+        "iam:PutUserPolicy"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "SecretsAccess",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue",
+        "secretsmanager:CreateSecret",
+        "secretsmanager:UpdateSecret",
+        "secretsmanager:DeleteSecret"
+      ],
+      "Resource": "arn:aws:secretsmanager:*:*:secret:*"
+    },
+    {
+      "Sid": "DatabaseAccess",
+      "Effect": "Allow",
+      "Action": [
+        "rds:*",
+        "dynamodb:*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
 
+**Good**
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyPublicAccess",
+      "Effect": "Deny",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name",
+        "arn:aws:s3:::your-bucket-name/*"
+      ],
+      "Condition": {
+        "Bool": {
+          "s3:PublicAccessBlock": "false"
+        }
+      }
+    },
+    {
+      "Sid": "DenyBucketPolicyModification",
+      "Effect": "Deny",
+      "Action": "s3:PutBucketPolicy",
+      "Resource": "arn:aws:s3:::your-bucket-name"
+    },
+    {
+      "Sid": "RestrictedS3Access",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::your-bucket-name/*",
+        "arn:aws:s3:::your-bucket-name"
+      ],
+      "Condition": {
+        "StringEquals": {
+          "s3:x-amz-server-side-encryption": "aws:kms",
+          "s3:VersionStatus": "Enabled"
+        },
+        "Bool": {
+          "aws:SecureTransport": "true",
+          "aws:MultiFactorAuthPresent": "true"
+        },
+        "IpAddress": {
+          "aws:SourceIp": ["YOUR-ALLOWED-IP-RANGE"]
+        }
+      }
+    },
+    {
+      "Sid": "RestrictedS3Delete",
+      "Effect": "Allow",
+      "Action": "s3:DeleteObject",
+      "Resource": "arn:aws:s3:::your-bucket-name/*",
+      "Condition": {
+        "Bool": {
+          "aws:MultiFactorAuthPresent": "true"
+        }
+      }
+    },
+    {
+      "Sid": "RestrictedEC2Access",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:DescribeInstances",
+        "ec2:StartInstances",
+        "ec2:StopInstances"
+      ],
+      "Resource": "arn:aws:ec2:*:*:instance/i-*",
+      "Condition": {
+        "StringEquals": {
+          "aws:ResourceTag/Environment": "Production",
+          "ec2:Region": ["us-east-1", "us-west-2"],
+          "ec2:MetadataHttpTokens": "required",
+          "ec2:InstanceType": ["t3.micro", "t3.small", "t3.medium"]
+        },
+        "IpAddress": {
+          "aws:SourceIp": ["YOUR-ALLOWED-IP-RANGE"]
+        }
+      }
+    },
+    {
+      "Sid": "LimitedIAMPassRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::123456789012:role/specific-application-role",
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": "ec2.amazonaws.com"
+        },
+        "NumericLessThan": {
+          "iam:MaxSessionDuration": "3600"
+        }
+      }
+    },
+    {
+      "Sid": "RestrictedSecretsAccess",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue"
+      ],
+      "Resource": "arn:aws:secretsmanager:region:account-id:secret:specific-secret-name-??????",
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "true"
+        },
+        "DateGreaterThan": {
+          "secretsmanager:RotationAge": "30"
+        },
+        "StringEquals": {
+          "secretsmanager:VersionStage": "AWSCURRENT",
+          "secretsmanager:KmsKeyId": "arn:aws:kms:region:account-id:key/specific-key-id"
+        },
+        "IpAddress": {
+          "aws:SourceIp": ["YOUR-ALLOWED-IP-RANGE"]
+        }
+      }
+    },
+    {
+      "Sid": "RestrictedDatabaseAccess",
+      "Effect": "Allow",
+      "Action": [
+        "rds:DescribeDBInstances",
+        "dynamodb:GetItem",
+        "dynamodb:Query"
+      ],
+      "Resource": [
+        "arn:aws:rds:*:*:db:prod-db-*",
+        "arn:aws:dynamodb:*:*:table/prod-table"
+      ],
+      "Condition": {
+        "Bool": {
+          "aws:SecureTransport": "true"
+        },
+        "StringEquals": {
+          "aws:SourceVpce": "vpce-YOUR-ENDPOINT-ID",
+          "aws:ResourceTag/Environment": "Production"
+        }
+      }
+    }
+  ]
+}
+```
 
 
 ### Findings Reduction Table
-*[Screenshot: findings-reduction-table.png]*
+I ended up doing more remediations so this isn't exact but the concept is the same.
 
 **Table format:**
 | Finding Type | Before | After | Improvement |
