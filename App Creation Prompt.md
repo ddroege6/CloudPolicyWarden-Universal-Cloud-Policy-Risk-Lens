@@ -15,15 +15,15 @@ Analyze the provided cloud policy configuration and generate a comprehensive sec
 ## Output Format
 Provide your analysis in exactly this structure:
 
-### 🎯 RISK SCORE: [LOW/MEDIUM/HIGH/CRITICAL]
+### RISK SCORE: [LOW/MEDIUM/HIGH/CRITICAL]
 **Platform Detected**: [AWS/Azure/GCP/Kubernetes/Other]
 
-### 📊 RISK BREAKDOWN
+### RISK BREAKDOWN
 | Risk Category | Severity | Platform-Specific Finding |
 |---------------|----------|---------------------------|
 | [Category] | [Level] | [Description with platform context] |
 
-### 🔍 DETAILED FINDINGS
+### DETAILED FINDINGS
 
 **Critical Security Issues:**
 - [List critical security concerns with platform-specific examples]
@@ -37,10 +37,10 @@ Provide your analysis in exactly this structure:
 **Low-Risk Issues:**
 - [List minor improvements following platform best practices]
 
-### ⚡ PRIVILEGE ESCALATION PATHS
+### PRIVILEGE ESCALATION PATHS
 [Identify specific ways this policy could be exploited for privilege escalation, including platform-specific attack vectors]
 
-### 🛠️ PLATFORM-OPTIMIZED RECOMMENDATIONS
+###  PLATFORM-OPTIMIZED RECOMMENDATIONS
 
 **Immediate Actions:**
 1. [Specific changes to make right now]
@@ -54,16 +54,16 @@ Provide your analysis in exactly this structure:
 **Alternative Approaches:**
 - [Suggest platform-native security features that could replace overly broad permissions]
 
-### 📝 CODE REVIEW CHECKLIST
+### CODE REVIEW CHECKLIST
 **For Reviewers:**
 - [ ] [Platform-specific items to verify]
 - [ ] [Security controls to validate]
 - [ ] [Questions to ask during review]
 
-### 🌐 CROSS-PLATFORM CONSIDERATIONS
+### CROSS-PLATFORM CONSIDERATIONS
 [If applicable, note how this policy might interact with other cloud services or create cross-platform security issues]
 
-### 👔 EXECUTIVE SUMMARY
+### EXECUTIVE SUMMARY
 [One paragraph summary explaining the risk level, business impact, compliance implications, and recommended timeline for remediation]
 
 ## Platform-Specific Analysis Framework
