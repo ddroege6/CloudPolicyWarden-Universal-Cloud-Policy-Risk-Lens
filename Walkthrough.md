@@ -7,14 +7,14 @@ This guide demonstrates the complete workflow of analyzing cloud policies using 
 ## Screenshot Guide
 
 ### 1. App Interface Overview
-<img width="1128" height="1299" alt="Image" src="https://github.com/user-attachments/assets/17803dbf-c9c4-4939-8b83-ed35e290b461" />
+<img width="1128" height="1263" alt="Image" src="https://github.com/user-attachments/assets/f2757a1f-d75a-4392-ae44-d677f5276afc" />
 
 **Caption:** *The Universal Cloud Policy Risk Lens interface - paste any cloud policy and get instant security analysis*
 
 ---
 
 ### 2. Policy Input Example
-*<img width="2143" height="1308" alt="Image" src="https://github.com/user-attachments/assets/39169ac5-02b2-49b5-823a-e3177b16b47b" />*
+*<img width="2143" height="780" alt="Image" src="https://github.com/user-attachments/assets/0b0bbe17-6f59-48f5-ac7d-ca60670c8015" />*
 **Caption:** *Analyzing a production AWS IAM policy with high strictness settings*
 
 ---
