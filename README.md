@@ -1,5 +1,7 @@
 # CloudPolicyWarden: Universal Cloud Policy Risk Lens
 
+<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/704cb47e-8340-4788-950b-b6e17ff92138" />
+
 ## Project Overview
 
 [**CloudPolicyWarden**](https://partyrock.aws/u/Droseidon/QVwVNb2-s/CloudShield%3A-Universal-Cloud-Policy-Risk-Assessment-and-Optimization-Tool) is an AI-powered security analysis tool that automatically detects, analyzes, and provides remediation guidance for cloud infrastructure policies across multiple platforms. Built using AWS PartyRock's generative AI capabilities, this tool transforms complex security policy review from a manual, time-intensive process into an instant, actionable analysis.
