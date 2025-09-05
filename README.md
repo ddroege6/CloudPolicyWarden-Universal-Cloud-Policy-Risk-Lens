@@ -1,6 +1,6 @@
 # CloudPolicyWarden: Universal Cloud Policy Risk Lens
 
-<img width="1024" height="1024" alt="Image" src="https://github.com/user-attachments/assets/704cb47e-8340-4788-950b-b6e17ff92138" />
+<img width="666" height="1024" alt="Image" src="https://github.com/user-attachments/assets/704cb47e-8340-4788-950b-b6e17ff92138" />
 
 ## Project Overview
 
